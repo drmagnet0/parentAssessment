@@ -1,0 +1,31 @@
+<div class="container loginComponent">
+  <div class="row">
+    <div class="col-sm-6 positionRelative leftLogin">
+      <div class="loginImage"></div>
+    </div>
+    <div class="col-sm-6 positionRelative rightLogin">
+      <div class="loginForm">
+        <h1>Welcome back!</h1>
+        <p>Please login to access your <span>Spaces</span> Dashboard</p>
+        <form>
+          <div class="form-group">
+            <label for="userName">Username</label>
+            <input type="text" class="form-control" id="userName" name="userName" placeholder="Username…" [(ngModel)]="user.email">
+          </div>
+          <div class="form-group">
+            <label for="userPassword">Password</label>
+            <input type="password" class="form-control" id="userPassword" name="userPassword" placeholder="**********" [(ngModel)]="user.password">
+          </div>
+          <div class="form-group row loginFormFooter">
+            <div class="col-sm-6">
+              <a href="">Forgot password?</a>
+            </div>
+            <div class="col-sm-6">
+                <button type="button" class="btn btn-default" (click)="login(user)">login</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
